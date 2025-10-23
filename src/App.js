@@ -1,21 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import LoginSignup from './Components/LoginSignup/LoginSignup';
-import Welcome from './Welcome';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LoginSignup } from './Components/LoginSignup/LoginSignup';
+import Welcome from "./Welcome";
 
 function App() {
   return (
-    
-    <div>
-      <LoginSignup/>
-       <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginSignup />} />
         <Route path="/welcome" element={<Welcome />} />
       </Routes>
-    </Router>
-    </div>
-    
+    </BrowserRouter>
   );
 }
 

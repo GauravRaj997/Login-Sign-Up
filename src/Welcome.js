@@ -1,11 +1,11 @@
-import React from 'react';
-import './Welcome.css'; 
-const Welcome = () => {
+import React from "react";
+
+function Welcome() {
   return (
-    <div className="welcome-container">
-      <h1>Welcome</h1>
+    <div>
+      <h1>Welcome to my test page!</h1>
     </div>
   );
-};
+}
 
 export default Welcome;
